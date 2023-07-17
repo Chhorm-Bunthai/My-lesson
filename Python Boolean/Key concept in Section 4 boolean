@@ -1,0 +1,315 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "3a8b76b1",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "True\n",
+      "True\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(bool(-1))\n",
+    "print(bool('hello'))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "048d6ab8",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Result of 10 > 5 : True\n",
+      "Result of 5 < 1 : False\n",
+      "Result of 5 == 5 : True\n",
+      "Result of 5 !=5 : False\n",
+      "Result of \"a\" > \"b\" : True\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Comparation Operator\n",
+    "print('Result of 10 > 5 :',10 >5)\n",
+    "print('Result of 5 < 1 :',5 <1)\n",
+    "print('Result of 5 == 5 :',5 == 5)\n",
+    "print('Result of 5 !=5 :', 5 != 5)\n",
+    "print('Result of \"a\" > \"b\" :','b' > 'a')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "46534b83",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter an integer :3\n",
+      "Is this an even number : False\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Numeric Type and Comparation Operator\n",
+    "# a = 100\n",
+    "# b = 200\n",
+    "# print(a == b)\n",
+    "# print(a != b)\n",
+    "# print(a L)\n",
+    "\n",
+    "\n",
+    "n = int(input('Enter an integer :'))\n",
+    "print('Is this an even number :', n % 2 == 0)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "id": "8b3f29d4",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "n =  200\n",
+      "True\n"
+     ]
+    }
+   ],
+   "source": [
+    "n = 100 \n",
+    "print('n = ', n)\n",
+    "print(0 < n <= 200)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "id": "652b139c",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "False\n",
+      "True\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 2.3 String & Comparation Operator\n",
+    "print('aaa' != 'aaa')\n",
+    "print('aaa' != 'bbb')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "id": "cd9ea635",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "SyntaxError",
+     "evalue": "invalid syntax (1623903426.py, line 3)",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;36m  Cell \u001b[0;32mIn[19], line 3\u001b[0;36m\u001b[0m\n\u001b[0;31m    num1 = < num2\u001b[0m\n\u001b[0m           ^\u001b[0m\n\u001b[0;31mSyntaxError\u001b[0m\u001b[0;31m:\u001b[0m invalid syntax\n"
+     ]
+    }
+   ],
+   "source": [
+    "num1 = 100\n",
+    "num2 = 200\n",
+    "num1 =< num2"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 22,
+   "id": "eabd458f",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "False\n",
+      "True\n",
+      "False\n",
+      "True\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Logical operator\n",
+    "x = True\n",
+    "y = False\n",
+    "print(x and y )\n",
+    "print(x or y)\n",
+    "print(not x)\n",
+    "print(not y)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 26,
+   "id": "9717654c",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Please enter an integer :99\n",
+      " Is this integer an even number within the range of 0 to 100? False\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Logical Operation\n",
+    "num = int(input('Please enter an integer :'))\n",
+    "result = num >= 0 and num <= 100 and num % 2 == 0\n",
+    "print (' Is this integer an even number within the range of 0 to 100?',result)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 31,
+   "id": "d7b44144",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "True"
+      ]
+     },
+     "execution_count": 31,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "num = 2024\n",
+    "(num % 4 == 0 and num % 100 != 0) or num % 400 == 0\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 34,
+   "id": "0e6fb705",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "True\n",
+      "False\n"
+     ]
+    }
+   ],
+   "source": [
+    "#  Is and == operator\n",
+    "a = 1.0\n",
+    "b =1\n",
+    "print(a == b)\n",
+    "print(a is b)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 40,
+   "id": "c8f962ea",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "False\n",
+      "True\n",
+      "False\n"
+     ]
+    }
+   ],
+   "source": [
+    "# In operator\n",
+    "print('aaa' in 'aaa-bbb-ccc')\n",
+    "print('bbb' in 'aaa-bbb-ccc')\n",
+    "print('ddd' in 'aaa-bbb-ccc')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 43,
+   "id": "9316867f",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter the first number :2\n",
+      "Enter the second number:3\n",
+      "enter the third number.  :4\n",
+      "Average is : 3.0\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Example code for Operation Prscedence\n",
+    "x = int(input('Enter the first number :'))\n",
+    "y = int(input('Enter the second number:'))\n",
+    "z=int(input('enter the third number.  :'))\n",
+    "\n",
+    "avg= ( x + y + z ) / 3\n",
+    "print('Average is :', avg)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "54d69691",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.10.9"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
